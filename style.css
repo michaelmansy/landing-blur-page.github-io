@@ -26,3 +26,38 @@ so we use the pseudoelement ::after */
     filter: blur(0px);
     -webkit-filter: blur(0px);
 }
+
+#showcase:hover .content{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.content{
+    position: absolute;   /*make the showcase take the whole place*/
+    z-index: 1;     /*make content appear on the showcase image*/
+    top: 10%;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    transition: all 1000ms;
+    /* the transition is happening due to the specified margins top and left */
+}
+
+.content .logo{
+    height: 180px;
+    width: 180px;
+}
+
+.content .title{
+    font-size: 2.2rem;
+    margin-top: 1rem;
+}
+
+.content .text{
+    line-height: 1.7;
+    margin-top: 1.2rem;
+}
+
