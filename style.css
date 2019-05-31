@@ -77,6 +77,14 @@ so we use the pseudoelement ::after */
     /* grid-template-columns: repeat(3, 1fr); */ 
 }
 
+.grid-2{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    /* just another way of dividing it like above */
+    /* grid-template-columns: repeat(2, 1fr); */ 
+}
+
 /* center the icons and their titles */
 .center{
     text-align: center;
@@ -91,4 +99,12 @@ so we use the pseudoelement ::after */
 .bg-dark{
     background: #333;
     color: #f4f4f4;
+}
+
+footer{
+    padding: 2.2rem;
+}
+
+footer p{
+    margin: 0;
 }
