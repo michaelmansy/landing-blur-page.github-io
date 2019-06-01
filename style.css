@@ -108,3 +108,57 @@ footer{
 footer p{
     margin: 0;
 }
+
+
+
+/* SMALL SCREENS */
+@media(max-width: 425px){
+    #showcase::after {
+        height: 50vh;
+    }
+
+    .content{
+        top: 3%;
+        margin-top: 2px;
+    }
+
+    .content .logo{
+        height: 140p;
+        /* width: 140px;; */
+    }
+
+    .content .title{
+        font-size: 1.4rem;
+    }
+
+    .content .text{
+        display: none;
+    }
+
+    #services div{
+        border-bottom: #333 dashed 1px;
+        padding: 1.2rem 1rem;
+    }
+
+    .grid-3{
+        grid-template-columns: 1fr;
+    }
+
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* LANDSCAPE */
+@media (max-height: 500px){
+    .content .title, .content .text{
+        display: none;
+    }
+
+    .content{
+        top: 0;
+    }
+}
+
